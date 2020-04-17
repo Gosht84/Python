@@ -1,0 +1,157 @@
+$ python
+Python 3.8.0 (default, Dec 20 2019, 15:53:45) 
+[Clang 10.0.1 (clang-1001.0.46.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> f = open('wasteland.txt', mode='wt', encoding='utf-8')
+>>> help(f)
+[?1049h[?1h=Help on TextIOWrapper object:[m
+[m
+class [1mTextIOWrapper[0m(_TextIOBase)[m
+ |  TextIOWrapper(buffer, encoding=None, errors=None, newline=None, line_bufferi[m ng=False, write_through=False)[m
+ |  [m
+ |  Character and line based layer over a BufferedIOBase object, buffer.[m
+ |  [m
+ |  encoding gives the name of the encoding that the stream will be[m
+ |  decoded or encoded with. It defaults to locale.getpreferredencoding(False).[m
+ |  [m
+ |  errors determines the strictness of encoding and decoding (see[m
+ |  help(codecs.Codec) or the documentation for codecs.register) and[m
+ |  defaults to "strict".[m
+ |  [m
+ |  newline controls how line endings are handled. It can be None, '',[m
+ |  '\n', '\r', and '\r\n'.  It works as follows:[m
+ |  [m
+ |  * On input, if newline is None, universal newlines mode is[m
+ |    enabled. Lines in the input can end in '\n', '\r', or '\r\n', and[m
+ |    these are translated into '\n' before being returned to the[m
+ |    caller. If it is '', universal newline mode is enabled, but line[m
+ |    endings are returned to the caller untranslated. If it has any of[m
+:[K[K |    the other legal values, input lines are only terminated by the given[m
+:[K[K |    string, and the line ending is returned to the caller untranslated.[m
+:[K[K |  [m
+:[K[K |  * On output, if newline is None, any '\n' characters written are[m
+:[K[K |    translated to the system default line separator, os.linesep. If[m
+:[K[K |    newline is '' or '\n', no translation takes place. If newline is any[m
+:[K[K |    of the other legal values, any '\n' characters written are translated[m
+:[K[K |    to the given string.[m
+:[K[K |  [m
+:[K[K |  If line_buffering is True, a call to flush is implied when a call to[m
+:[K[K |  write contains a newline character.[m
+:[K[K |  [m
+:[K[K |  Method resolution order:[m
+:[K[K |      TextIOWrapper[m
+:[K[K |      _TextIOBase[m
+:[K[K |      _IOBase[m
+:[K[K |      builtins.object[m
+:[K[K |  [m
+:[K[K |  Methods defined here:[m
+:[K[K |  [m
+:[K[K |  [1m__init__[0m(self, /, *args, **kwargs)[m
+:[K[K |      Initialize self.  See help(type(self)) for accurate signature.[m
+:[K[K |  [m
+:[K[K |  [1m__next__[0m(self, /)[m
+:[K[K |      Implement next(self).[m
+:[K[K |  [m
+:[K[K |  [1m__repr__[0m(self, /)[m
+:[K[K |      Return repr(self).[m
+:[K[K |  [m
+:[K[K |  [1mclose[0m(self, /)[m
+:[K[K |      Flush and close the IO object.[m
+:[K[K |      [m
+:[K[K |      This method has no effect if the file is already closed.[m
+:[K[K |  [m
+:[K[K |  [1mdetach[0m(self, /)[m
+:[K[K |      Separate the underlying buffer from the TextIOBase and return it.[m
+:[K[K |      [m
+:[K[K |      After the underlying buffer has been detached, the TextIO is in an[m
+:[K[K |      unusable state.[m
+:[K[K |  [m
+:[K[K |  [1mfileno[0m(self, /)[m
+:[K[K |      Returns underlying file descriptor if one exists.[m
+:[K[K |      [m
+:[K[K |      OSError is raised if the IO object does not use a file descriptor.[m
+:[K[K |  [m
+:[K[K |  [1mflush[0m(self, /)[m
+:[K[K |      Flush write buffers, if applicable.[m
+:[K[K |      [m
+:[K[K |      This is not implemented for read-only and non-blocking streams.[m
+:[K[K |  [m
+:[K[K |  [1misatty[0m(self, /)[m
+:[K[K |      Return whether this is an 'interactive' stream.[m
+:[K[K |      [m
+:[K[K |      Return False if it can't be determined.[m
+:[K[K |  [m
+:[K[K |  [1mread[0m(self, size=-1, /)[m
+:[K[K |      Read at most n characters from stream.[m
+:[K[K |      [m
+:[K[K |      Read from underlying buffer until we have n characters or we hit EOF.[m
+:[K[K |      If n is negative or omitted, read until EOF.[m
+:[K[K |  [m
+:[K[K |  [1mreadable[0m(self, /)[m
+:[K[K |      Return whether object was opened for reading.[m
+:[K[K |      [m
+:[K[K |      If False, read() will raise OSError.[m
+:[K[K |  [m
+:[K[K |  [1mreadline[0m(self, size=-1, /)[m
+:[K[K |      Read until newline or EOF.[m
+:[K[K |      [m
+:[K[K |      Returns an empty string if EOF is hit immediately.[m
+:[K[K |  [m
+:[K[K |  [1mreconfigure[0m(self, /, *, encoding=None, errors=None, newline=None, line_buffe[m :[K[Kring=None, write_through=None)[m
+:[K[K |      Reconfigure the text stream with new parameters.[m
+:[K[K |      [m
+:[K[K |      This also does an implicit stream flush.[m
+:[K[K |  [m
+:[K[K |  [1mseek[0m(self, cookie, whence=0, /)[m
+:[K[K |      Change stream position.[m
+:[K[K |      [m
+:[K[K |      Change the stream position to the given byte offset. The offset is[m
+:[K[K |      interpreted relative to the position indicated by whence.  Values[m
+:[K[K |      for whence are:[m
+:[K[K |      [m
+:[K[K |      * 0 -- start of stream (the default); offset should be zero or positive[m
+:[K[K |      * 1 -- current stream position; offset may be negative[m
+:[K[K |      * 2 -- end of stream; offset is usually negative[m
+:[K[K |      [m
+:[K[K |      Return the new absolute position.[m
+:[K[K |  [m
+:[K[K |  [1mseekable[0m(self, /)[m
+:[K[K |      Return whether object supports random access.[m
+:[K[K |      [m
+:[K[K |      If False, seek(), tell() and truncate() will raise OSError.[m
+:[K[K |      This method may need to do a test seek().[m
+:[K[K |  [m
+:[K[K |  [1mtell[0m(self, /)[m
+:[K[K |      Return current stream position.[m
+:[K[K |  [m
+:[K[K |  [1mtruncate[0m(self, pos=None, /)[m
+:[K[K |      Truncate file to size bytes.[m
+:[K[K |      [m
+:[K[K |      File pointer is left unchanged.  Size defaults to the current IO[m
+:[K[K |      position as reported by tell().  Returns the new size.[m
+:[K[K |  [m
+:[K[K |  [1mwritable[0m(self, /)[m
+:[K[K |      Return whether object was opened for writing.[m
+:[K[K |      [m
+:[K[K |      If False, write() will raise OSError.[m
+:[K[K |  [m
+:[K[K |  [1mwrite[0m(self, text, /)[m
+:[K[K |      Write string to stream.[m
+:[K[K |      Returns the number of characters written (which is always equal to[m
+:[K[K |      the length of the string).[m
+:[K[K |  [m
+:[K[K |  ----------------------------------------------------------------------[m
+:[K[K |  Static methods defined here:[m
+:[K[K |  [m
+:[K[K[?1l>[?1049l
+>>> f.write('What are the roots that clutch, ')
+32
+>>> f.write('what branches grow\n')
+19
+>>> f.write('Out of this stony rubbish? ')
+27
+>>> f.close()
+>>> exit()
+$ ls -l wasteland.txt
+-rw-r--r--  1 abingham  staff  78 Mar 13 16:23 wasteland.txt
+

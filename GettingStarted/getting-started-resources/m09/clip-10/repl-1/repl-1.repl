@@ -1,0 +1,8 @@
+>>> million_squares = (x*x for x in range(1, 1000001))
+>>> million_squares
+<generator object <genexpr> at 0x10962e120>
+>>> list(million_squares)[-10:]
+[999982000081, 999984000064, 999986000049, 999988000036, 999990000025, 999992000016, 999994000009, 999996000004, 999998000001, 1000000000000]
+>>> list(million_squares)
+[]
+

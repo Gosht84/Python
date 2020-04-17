@@ -1,0 +1,6 @@
+>>> codes = dict(gb=44, us=1, no=47, fr=33, es=34)
+>>> codes['de']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'de'
+

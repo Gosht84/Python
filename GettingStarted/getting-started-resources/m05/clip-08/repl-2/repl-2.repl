@@ -1,0 +1,25 @@
+>>> import words
+>>> help(words)
+[?1049h[?1h=Help on module words:[m
+[m
+[1mNAME[0m[m
+    words - Retrieve and print words from a URL.[m
+[m
+[1mDESCRIPTION[0m[m
+    Usage:[m
+    [m
+       python3 words.py <URL>[m
+[m
+[1mFUNCTIONS[0m[m
+    [1mfetch_words[0m(url)[m
+        Fetch a list of words from a URL.[m
+        [m
+        Args:[m
+            url: The URL of a UTF-8 text document.[m
+        [m
+        Returns:[m
+            A list of strings containing the words from[m
+            the document.[m
+    [m
+    [1mmain[0m(url)[m
+        Print each word from a text document from at a URL.[m

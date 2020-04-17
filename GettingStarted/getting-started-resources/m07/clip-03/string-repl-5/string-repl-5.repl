@@ -1,0 +1,35 @@
+>>> value = 4 * 20
+>>> f'The value is {value}'
+'The value is 80'
+>>> import datetime
+>>> f'The current time is {datetime.datetime.now().isoformat()}.'
+'The current time is 2020-03-13T16:20:39.853726.'
+>>> import math
+>>> f'Math constants: pi={math.pi}, e={math.e}'
+'Math constants: pi=3.141592653589793, e=2.718281828459045'
+>>> f'Math constants: pi={math.pi:.3f}, e={math.e:.3f}'
+'Math constants: pi=3.142, e=2.718'
+>>> help(str)
+[?1049h[?1h=Help on class str in module builtins:[m
+[m
+class [1mstr[0m(object)[m
+ |  str(object='') -> str[m
+ |  str(bytes_or_buffer[, encoding[, errors]]) -> str[m
+ |  [m
+ |  Create a new string object from the given object. If encoding or[m
+ |  errors is specified, then the object must expose a data buffer[m
+ |  that will be decoded using the given encoding and error handler.[m
+ |  Otherwise, returns the result of object.__str__() (if defined)[m
+ |  or repr(object).[m
+ |  encoding defaults to sys.getdefaultencoding().[m
+ |  errors defaults to 'strict'.[m
+ |  [m
+ |  Methods defined here:[m
+ |  [m
+ |  [1m__add__[0m(self, value, /)[m
+ |      Return self+value.[m
+ |  [m
+ |  [1m__contains__[0m(self, key, /)[m
+ |      Return key in self.[m
+ |  [m
+ |  [1m__eq__[0m(self, value, /)[m

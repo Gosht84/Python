@@ -1,0 +1,22 @@
+>>> count = 0
+>>> def show_count():
+...     print(count)
+... 
+>>> def set_count(c):
+...     count = c
+... 
+>>> show_count()
+0
+>>> set_count(5)
+>>> show_count()
+0
+>>> 7[6;9H[38;5;0m[48;5;214mcount = c87[6;9H[0mcount = c87[1;5H[38;5;0m[48;5;214mcount = 087[1;5H[0mcount = 08def set_count(c):
+...     global count
+...     count = c
+... 
+>>> show_count()
+0
+>>> set_count(5)
+>>> show_count()
+5
+

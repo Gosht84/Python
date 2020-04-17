@@ -1,0 +1,5 @@
+>>> w = even_or_odd(31)
+odd
+>>> w is None
+True
+

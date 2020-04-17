@@ -1,0 +1,23 @@
+>>> def lucas():
+...     yield 2
+...     a = 2
+...     b = 1
+...     while True:
+...         yield b
+...         a, b = b, a + b
+... 
+>>> 7[2;9H[38;5;0m[48;5;214myield 287[2;9H[0myield 287[3;1H[38;5;0m[48;5;214m...     a = 2
+...     b = 187[3;1H[0m...     a = 2
+...     b = 187[6;13H[38;5;0m[48;5;214myield b87[6;13H[0myield b87[7;13H[38;5;0m[48;5;214ma, b = b, a + b87[7;13H[0ma, b = b, a + b8for x in lucas():
+...     print(x)
+... 
+2
+1
+3
+4
+7
+11
+18
+
+KeyboardInterrupt
+

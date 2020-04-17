@@ -1,0 +1,9 @@
+>>> h = 'not perplexing do handwriting family where I illegibly know doctors'.split()
+>>> h
+['not', 'perplexing', 'do', 'handwriting', 'family', 'where', 'I', 'illegibly', 'know', 'doctors']
+>>> h.sort(key=len)
+>>> h
+['I', 'do', 'not', 'know', 'where', 'family', 'doctors', 'illegibly', 'perplexing', 'handwriting']
+>>> ' '.join(h)
+'I do not know where family doctors illegibly perplexing handwriting'
+

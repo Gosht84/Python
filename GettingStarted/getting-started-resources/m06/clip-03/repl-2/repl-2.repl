@@ -1,0 +1,13 @@
+>>> import time
+>>> time.ctime()
+'Fri Mar 13 16:21:42 2020'
+>>> def show_default(arg=time.ctime()):
+...     print(arg)
+... 
+>>> show_default()
+Fri Mar 13 16:21:43 2020
+>>> show_default()
+Fri Mar 13 16:21:43 2020
+>>> show_default()
+Fri Mar 13 16:21:43 2020
+

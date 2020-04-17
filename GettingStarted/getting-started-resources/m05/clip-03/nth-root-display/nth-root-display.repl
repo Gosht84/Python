@@ -1,0 +1,3 @@
+>>> display_nth_root(64, 4)
+The 4th root of 64 is 2.8284271247461903
+

@@ -1,0 +1,141 @@
+>>> import math
+>>> math.sqrt(81)
+9.0
+>>> help
+Type help() for interactive help, or help(object) for help about object.
+>>> 7[5;1H[38;5;0m[48;5;214mType help() for interactive help87[5;1H[0mType help() for interactive help87[5;38H[38;5;0m[48;5;214mhelp(object)87[5;38H[0mhelp(object)8help(math)
+[?1049h[?1h=Help on module math:[m
+[m
+[1mNAME[0m[m
+    math[m
+[m
+[1mDESCRIPTION[0m[m
+    This module provides access to the mathematical functions[m
+    defined by the C standard.[m
+[m
+[1mFUNCTIONS[0m[m
+    [1macos[0m(x, /)[m
+        Return the arc cosine (measured in radians) of x.[m
+    [m
+    [1macosh[0m(x, /)[m
+        Return the inverse hyperbolic cosine of x.[m
+    [m
+    [1masin[0m(x, /)[m
+        Return the arc sine (measured in radians) of x.[m
+    [m
+    [1masinh[0m(x, /)[m
+        Return the inverse hyperbolic sine of x.[m
+    [m
+    [1matan[0m(x, /)[m
+:/factorial
+[K[K/[Kff[Kaa[Kcc[Ktt[Koo[Krr[Kii[Kaa[Kll[K[1;1HHelp on module math:[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H    math[m
+[5;1H[m
+[6;1H[1mDESCRIPTION[0m[m
+[7;1H    This module provides access to the mathematical functions[m
+[8;1H    defined by the C standard.[m
+[9;1H[m
+[10;1H[1mFUNCTIONS[0m[m
+[11;1H    [1macos[0m(x, /)[m
+[12;1H        Return the arc cosine (measured in radians) of x.[m
+[13;1H    [m
+[14;1H    [1macosh[0m(x, /)[m
+[15;1H        Return the inverse hyperbolic cosine of x.[m
+[16;1H    [m
+[17;1H    [1masin[0m(x, /)[m
+[18;1H        Return the arc sine (measured in radians) of x.[m
+[19;1H    [m
+[20;1H    [1masinh[0m(x, /)[m
+[21;1H        Return the inverse hyperbolic sine of x.[m
+[22;1H    [m
+[23;1H    [1matan[0m(x, /)[m
+[24;1H[1;1HHelp on module math:[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H    math[m
+[5;1H[m
+[6;1H[1mDESCRIPTION[0m[m
+[7;1H    This module provides access to the mathematical functions[m
+[8;1H    defined by the C standard.[m
+[9;1H[m
+[10;1H[1mFUNCTIONS[0m[m
+[11;1H    [1macos[0m(x, /)[m
+[12;1H        Return the arc cosine (measured in radians) of x.[m
+[13;1H    [m
+[14;1H    [1macosh[0m(x, /)[m
+[15;1H        Return the inverse hyperbolic cosine of x.[m
+[16;1H    [m
+[17;1H    [1masin[0m(x, /)[m
+[18;1H        Return the arc sine (measured in radians) of x.[m
+[19;1H    [m
+[20;1H    [1masinh[0m(x, /)[m
+[21;1H        Return the inverse hyperbolic sine of x.[m
+[22;1H    [m
+[23;1H    [1matan[0m(x, /)[m
+[24;1H...skipping...
+    [1m[7mfactorial[27m[0m(x, /)[m
+        Find x!.[m
+        [m
+        Raise a ValueError if x is negative or non-integral.[m
+    [m
+    [1mfloor[0m(x, /)[m
+        Return the floor of x as an Integral.[m
+        [m
+        This is the largest integer <= x.[m
+    [m
+    [1mfmod[0m(x, y, /)[m
+        Return fmod(x, y), according to platform C.[m
+        [m
+        x % y may differ.[m
+    [m
+    [1mfrexp[0m(x, /)[m
+        Return the mantissa and exponent of x, as pair (m, e).[m
+        [m
+        m is a float and e is an int, such that x = m * 2.**e.[m
+        If x is 0, m and e are both 0.  Else 0.5 <= abs(m) < 1.0.[m
+    [m
+    [1mfsum[0m(seq, /)[m
+        Return an accurate floating point sum of values in the iterable seq.[m
+:7[1;5H[38;5;0m[48;5;214mfactorial(x, /)87[1;5H[0mfactorial(x, /)8[K[K[?1l>[?1049l
+>>> help(math.factorial)
+[?1049h[?1h=Help on built-in function factorial in module math:[m
+[m
+[1mfactorial[0m(x, /)[m
+    Find x!.[m
+    [m
+    Raise a ValueError if x is negative or non-integral.[m
+[7m(END)[27m
+[K[K[?1l>[?1049l
+>>> math.factorial(5)
+120
+>>> math.factorial(16)
+20922789888000
+>>> n = 5
+>>> k = 3
+>>> math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
+10.0
+>>> from math import factorial
+>>> factorial(n) / (factorial(k) * factorial(n - k))
+10.0
+>>> from math import factorial as fac
+>>> fac(n) / (fac(k) * fac(n - k))
+10.0
+>>> 7[10;5H[38;5;0m[48;5;214mmath.factorial(5)87[10;5H[0mmath.factorial(5)87[22;5H[38;5;0m[48;5;214mfac(n) / (fac(k) * fac(n - k))87[22;5H[0mfac(n) / (fac(k) * fac(n - k))8fac(n) // (fac(k) * fac(n - k))
+10
+>>> 2**31 - 1
+2147483647
+>>> fac(13)
+6227020800
+>>> fac(13) > 2**31 - 1
+True
+>>> n = 100
+>>> k = 2
+>>> fac(n) // (fac(k) * fac(n - k))
+4950
+>>> fac(n)
+93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+>>> len(str(fac(n)))
+158
+

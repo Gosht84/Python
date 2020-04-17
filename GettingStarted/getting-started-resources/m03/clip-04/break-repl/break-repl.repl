@@ -1,0 +1,10 @@
+>>> while True:
+...     response = input()
+...     if int(response) % 7 == 0:
+...         break
+... 
+12
+67
+34
+28
+

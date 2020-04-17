@@ -1,0 +1,98 @@
+>>> help(str)
+[?1049h[?1h=Help on class str in module builtins:[m
+[m
+class [1mstr[0m(object)[m
+ |  str(object='') -> str[m
+ |  str(bytes_or_buffer[, encoding[, errors]]) -> str[m
+ |  [m
+ |  Create a new string object from the given object. If encoding or[m
+ |  errors is specified, then the object must expose a data buffer[m
+ |  that will be decoded using the given encoding and error handler.[m
+ |  Otherwise, returns the result of object.__str__() (if defined)[m
+ |  or repr(object).[m
+ |  encoding defaults to sys.getdefaultencoding().[m
+ |  errors defaults to 'strict'.[m
+ |  [m
+ |  Methods defined here:[m
+ |  [m
+ |  [1m__add__[0m(self, value, /)[m
+ |      Return self+value.[m
+ |  [m
+ |  [1m__contains__[0m(self, key, /)[m
+ |      Return key in self.[m
+ |  [m
+ |  [1m__eq__[0m(self, value, /)[m
+:[K[K |      Return self==value.[m
+:[K[K |  [m
+:[K[K |  [1m__format__[0m(self, format_spec, /)[m
+:[K[K |      Return a formatted version of the string as described by format_spec.[m
+:[K[K |  [m
+:[K[K |  [1m__ge__[0m(self, value, /)[m
+:[K[K |      Return self>=value.[m
+:[K[K |  [m
+:[K[K |  [1m__getattribute__[0m(self, name, /)[m
+:[K[K |      Return getattr(self, name).[m
+:[K[K |  [m
+:[K[K |  [1m__getitem__[0m(self, key, /)[m
+:[K[K |      Return self[key].[m
+:[K[K |  [m
+:[K[K |  [1m__getnewargs__[0m(...)[m
+:[K[K |  [m
+:[K[K |  [1m__gt__[0m(self, value, /)[m
+:[K[K |      Return self>value.[m
+:[K[K |  [m
+:[K[K |  [1m__hash__[0m(self, /)[m
+:[K[K |      Return hash(self).[m
+:[K[K |  [m
+:[K[K |  [1m__iter__[0m(self, /)[m
+:[K[K |      Implement iter(self).[m
+:[K[K |  [m
+:[K[K |  [1m__le__[0m(self, value, /)[m
+:[K[K |      Return self<=value.[m
+:[K[K |  [m
+:[K[K |  [1m__len__[0m(self, /)[m
+:[K[K |      Return len(self).[m
+:[K[K |  [m
+:[K[K |  [1m__lt__[0m(self, value, /)[m
+:[K[K |      Return self<value.[m
+:[K[K |  [m
+:[K[K |  [1m__mod__[0m(self, value, /)[m
+:[K[K |      Return self%value.[m
+:[K[K |  [m
+:[K[K |  [1m__mul__[0m(self, value, /)[m
+:[K[K |      Return self*value.[m
+:[K[K |  [m
+:[K[K |  [1m__ne__[0m(self, value, /)[m
+:[K[K |      Return self!=value.[m
+:[K[K |  [m
+:[K[K |  [1m__repr__[0m(self, /)[m
+:[K[K |      Return repr(self).[m
+:[K[K |  [m
+:[K[K |  [1m__rmod__[0m(self, value, /)[m
+:[K[K |      Return value%self.[m
+:[K[K |  [m
+:[K[K |  [1m__rmul__[0m(self, value, /)[m
+:[K[K |      Return value*self.[m
+:[K[K |  [m
+:[K[K |  [1m__sizeof__[0m(self, /)[m
+:[K[K |      Return the size of the string in memory, in bytes.[m
+:[K[K |  [m
+:[K[K |  [1m__str__[0m(self, /)[m
+:[K[K |      Return str(self).[m
+:[K[K |  [m
+:[K[K |  [1mcapitalize[0m(self, /)[m
+:[K[K |      Return a capitalized version of the string.[m
+:[K[K |      [m
+:[K[K |      More specifically, make the first character have upper case and the rest[m :[K[K lower[m
+:[K[K |      case.[m
+:[K[K |  [m
+:[K[K |  [1mcasefold[0m(self, /)[m
+:[K[K |      Return a version of the string suitable for caseless comparisons.[m
+:[K[K |  [m
+:[K[K[?1l>[?1049l
+>>> c = "oslo"
+>>> c.capitalize()
+'Oslo'
+>>> c
+'oslo'
+

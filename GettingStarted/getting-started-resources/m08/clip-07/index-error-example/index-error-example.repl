@@ -1,0 +1,6 @@
+>>> z = [1, 4, 2]
+>>> z[4]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+

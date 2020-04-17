@@ -1,0 +1,5 @@
+>>> from exceptional import convert
+>>> convert("fail".split())
+Conversion error: KeyError('fail')
+-1
+
